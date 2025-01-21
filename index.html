@@ -4,99 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quizlet Flashcards</title>
-    <style>
-        /* Allgemeines Styling */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(120deg, #74b9ff, #a29bfe);
-            color: #2d3436;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-        }
-
-        /* Kopfzeilenbereich */
-        header {
-            background: #0984e3;
-            color: #ffffff;
-            padding: 15px 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            text-align: center;
-            margin-bottom: 30px;
-            transition: transform 0.3s ease;
-        }
-
-        header:hover {
-            transform: scale(1.05);
-        }
-
-        header h1 {
-            font-size: 2rem;
-        }
-
-        /* Hauptbereich mit dem iframe */
-        .iframe-container {
-            width: 90%;
-            max-width: 800px;
-            background: #ffffff;
-            padding: 15px;
-            border-radius: 15px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
-            overflow: hidden;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .iframe-container:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
-        }
-
-        iframe {
-            width: 100%;
-            height: 500px;
-            border: none;
-            border-radius: 10px;
-        }
-
-        /* Fußzeile */
-        footer {
-            margin-top: 30px;
-            font-size: 0.9rem;
-            color: #dfe6e9;
-            text-align: center;
-        }
-
-        footer a {
-            color: #00cec9;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>Quizlet Flashcards</h1>
+        <p>Wähle eine Woche, um die passenden Karteikarten zu lernen!</p>
     </header>
-    <div class="iframe-container">
-        <iframe 
-            src="https://quizlet.com/993145650/flashcards/embed?i=4veneh&x=1jj1">
-        </iframe>
-    </div>
+    <main>
+        <div class="card-container">
+            <a href="200-201.html" class="card">
+                <h2>200-201</h2>
+                <p>Karteikarten zu 200-201</p>
+            </a>
+        </div>
+    </main>
     <footer>
-        Erstellt mit ❤ von <a href="https://yourwebsite.com" target="_blank">Ihrem Namen</a>
+        Erstellt von sigma
     </footer>
 </body>
 </html>
